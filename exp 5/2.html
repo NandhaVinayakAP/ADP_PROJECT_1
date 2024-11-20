@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee Form</title>
+    </head>
+    <body style="background-image: url('57b22fdc4ae0f7ed514193acc257f198.jpg'); background-size: cover;">
+        <center>
+        <h1>Employee Registration Form</h1>
+        </center>
+        <br><hr><br>
+        <form action="#" method="post">
+            <label for="fullName" style="font-size: 25px;">Full Name:</label>
+            <input type="name" id="fullName" name="fullName" style="font-size: 25px; border: 2px solid #000;" required><br><br><br>
+            <label for="email" style="font-size: 25px;">Email Address:</label>
+            <input type="email" id="email" name="email" style="font-size: 25px; border: 2px solid #000;" required><br><br><br>
+            <label for="phone" style="font-size: 25px;">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" style="font-size: 25px; border: 2px solid #000;" placeholder="+91" maxlength="10" required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /><br><br><br>
+            <label for="position" style="font-size: 25px;">Position Applied For:</label>
+            <input type="text" id="position" name="position" style="font-size: 25px; border: 2px solid #000;" required><br><br><br>
+            <label for="department" style="font-size: 25px;">Department:</label>
+            <select id="department" name="department" style="font-size: 25px; border: 2px solid #000;" required>
+                <option value="HR">Human Resources</option>
+                <option value="Finance">Finance</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Sales">Sales</option>
+            </select><br><br><br>
+            <label style="font-size: 25px;">Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male" style="font-size: 25px;">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" style="font-size: 25px;" required>
+            <label for="female" style="font-size: 25px;">Female</label>
+            <input type="radio" id="other" name="gender" value="Other" style="font-size: 25px;" required>
+            <label for="other" style="font-size: 25px;">Other</label><br><br><br>
+            <label for="dob" style="font-size: 25px;">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" style="font-size: 25px; border: 2px solid #000;" required><br><br><br>
+            <label for="startDate" style="font-size: 25px;">Start Date:</label>
+            <input type="date" id="startDate" name="startDate" style="font-size: 25px; border: 2px solid #000;" required><br><br><br>
+            <label for="address" style="font-size: 25px;">Home Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="50" style="font-size: 25px; border: 2px solid #000;" required></textarea><br><br><br>
+            <label for="resume" style="font-size: 25px;">Resume :</label>
+            <input type="file" id="resume" name="resume" accept=".pdf" style="font-size: 25px;" required>
+            <br><br><hr><br>
+            <center>
+            <input type="submit" value="Submit" style="font-size: 30px; border: 2px solid #000;">
+            </center>
+        </form>
+</html>

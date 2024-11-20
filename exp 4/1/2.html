@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>COMMUNITY FORM</title>
+    </head>
+    <body style="background-image: url('faded-background-dukmpz8g0k0772ho copy.jpg');">
+        <center>
+        <div class="container">
+            <h1>COMMUNITY DETAILS FORM</h1>
+        </center>
+            <br><br><hr><br><br>
+            <form action="#" method="get">
+                <label style="font-size: 25px;" for="name">Name :</label>
+                <input style="font-size: 25px;" type="text" id="name" name="name" required>
+                <br><br><br>
+                <label style="font-size: 25px;" for="community-sex">Sex :</label>
+                <br><br>
+                <label style="font-size: 25px;">Gender:</label>
+               <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female" required>
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="Other" required>
+                <label for="other">Other</label><br><br><br>
+                <label style="font-size: 25px;" for="community-name">Sports Name :</label>
+                <input style="font-size: 25px;" type="text" id="community-name" name="community-name" required>
+                <br><br><br>
+                <label style="font-size: 25px;" for="community-description">Sports Description :</label>
+                <textarea style="font-size: 25px;" id="community-description" name="community-description" rows="2" required></textarea>
+                <br><br><br>
+                <label style="font-size: 25px;" for="community-location">Location :</label>
+                <input style="font-size: 25px;" type="text" id="community-location" name="community-location" required>
+                <br><br><br>
+                <label style="font-size: 25px;" for="contact-email">Contact Email :</label>
+                <input style="font-size: 25px;" type="email" id="contact-email" name="contact-email" placeholder="@gmail.com" required>
+                <br><br><br>
+                <label style="font-size: 25px;" for="contact-phone">Contact Phone :</label>
+                <input style="font-size: 25px;" type="tel" id="contact-phone" name="contact-phone" placeholder="+91" maxlength="10" required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                <br><br><br>
+                <label style="font-size: 25px;" for="community-type">Sport Type :</label>
+                <select style="font-size: 25px;" id="community-type" name="community-type" required>
+                    <option value="Inter-Nationals" style="font-size: 25px;">Inter-Nationals</option>
+                    <option value="Nationals" style="font-size: 25px;">Nationals</option>
+                    <option value="Inter-State" style="font-size: 25px;">Inter-State</option>
+                    <option value="State" style="font-size: 25px;">State</option>
+                    <option value="Zone" style="font-size: 25px;">Zone</option>
+                </select>
+                <br><br><br>
+                <label style="font-size: 25px;" for="community-size">Estimated Community Size :</label>
+                <input style="font-size: 25px;" type="number" id="community-size" name="community-size" placeholder="members count" required>
+                <br><br><br>
+                <button style="font-size: 25px;" type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div> 
+    </body>
+</html>
